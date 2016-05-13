@@ -1,0 +1,22 @@
+# include functions
+if [ -f ~/.functions ]; then
+  . ~/.functions
+fi
+
+
+# include aliases
+if [ -f ~/.bash_aliases ]; then
+  . ~/.bash_aliases
+fi
+
+# Editor
+export EDITOR=vim
+
+# configure PS1
+if [ 0 -eq $UID ]
+then
+  PS1='`if [ $? = 0 ]; then echo "\[\033[01;32m\]✔"; else echo "\[\033[01;31m\]✘"; fi` \[\033[01;31m\]\u\[\033[01;31m\]@\[\033[01;31m\]\h\[\033[01;31m\] \[\033[01;31m\]\t\[\033[01;31m\] \w\[\033[35m\] \[\033[01;31m\]#\[\033[00m\] '
+else
+  PS1='`if [ $? = 0 ]; then echo "\[\033[01;32m\]✔"; else echo "\[\033[01;31m\]✘"; fi` \[\033[01;33m\]\u\[\033[01;33m\]@\[\033[01;33m\]\h\[\033[01;33m\] \[\033[01;33m\]\t\[\033[01;33m\] \w\[\033[35m\] \[\033[01;33m\]#\[\033[00m\] '
+fi
+
