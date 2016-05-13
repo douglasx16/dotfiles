@@ -1,0 +1,6 @@
+'atom-text-editor':
+  'alt-l': 'editor:split-selections-into-lines'
+  'alt-ctrl-k': 'seeing-is-believing:annotate-document'
+  'alt-ctrl-i,': 'seeing-is-believing:annotate-magic-comments'
+  'alt-ctrl-8': 'seeing-is-believing:remove-annotations'
+ 
