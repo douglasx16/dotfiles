@@ -26,3 +26,22 @@ function gc_docker() {
   for id in $(docker ps -a | grep -E ' Exited \([0-9]+\)' | gawk '{print $1}') ; do docker rm $id ; done
   for id in $(docker images | grep -E '<none> +<none>' | gawk '{print $3}') ; do docker rmi $id ; done
 }
+
+function sssh() {
+  echo "Pushing public key to $1"
+  ssh-copy-id -i ~/.ssh/id_rsa.pub $1
+
+  echo "Pushing .batchrc to $1"
+  scp ~/.bash_aliases $1:~
+  scp ~/.functions $1:~
+  scp ~/.bashrc_remote $1:~/.bashrc
+
+  if ! grep -q "^host $a # " .ssh/config
+  then
+    echo "Adding $1 to .ssh/config"
+    echo "host $1 # included from sssh" >> .ssh/config
+  fi
+  
+  echo "Starting connection"
+  ssh $1
+}
