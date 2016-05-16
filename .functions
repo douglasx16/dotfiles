@@ -36,7 +36,7 @@ function sssh() {
   scp ~/.functions $1:~
   scp ~/.bashrc_remote $1:~/.bashrc
 
-  if ! grep -q "^host $a #" .ssh/config
+  if ! grep -q "^host $1 #" .ssh/config
   then
     echo "Adding $1 to .ssh/config"
     echo "host $1 # included from sssh" >> .ssh/config
