@@ -4,3 +4,22 @@
   'alt-ctrl-i,': 'seeing-is-believing:annotate-magic-comments'
   'alt-ctrl-8': 'seeing-is-believing:remove-annotations'
  
+'body':
+  'ctrl-tab ^ctrl': 'unset!'
+  'ctrl-tab': 'pane:show-next-item'
+  'ctrl-shift-tab ^ctrl': 'unset!'
+  'ctrl-shift-tab': 'pane:show-previous-item'
+
+# For Windows and Linux
+'.platform-win32, .platform-linux':
+  # Create an empty split pane
+  'ctrl-k left':  'pane:split-left'
+  'ctrl-k right': 'pane:split-right'
+  'ctrl-k up':    'pane:split-up'
+  'ctrl-k down':  'pane:split-down'
+
+  # Create a split pane with the current pane item moved into it
+  'ctrl-k m left':  'pane:split-left-and-move-active-item'
+  'ctrl-k m right': 'pane:split-right-and-move-active-item'
+  'ctrl-k m up':    'pane:split-up-and-move-active-item'
+  'ctrl-k m down':  'pane:split-down-and-move-active-item'
