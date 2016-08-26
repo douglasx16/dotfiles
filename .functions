@@ -45,3 +45,10 @@ function sssh() {
   echo "Starting connection"
   ssh $1
 }
+webm2mp4 () {
+  ffmpeg -i "$1".webm -qscale 0 "$1".mp4
+}    
+mp42mp3 () {
+  ffmpeg -i "$1".mp4 "$1".mp3
+}
+
