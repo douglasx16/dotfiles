@@ -1,7 +1,8 @@
 "*":
-  "atom-beautify":
-    _analyticsUserId: "b3636a85-44fd-4d70-a159-0aa667ad2833"
-  core: {}
+  "autocomplete-plus":
+    useAlternateScoring: false
+  core:
+    autoHideMenuBar: true
   editor:
     fontSize: 15
     invisibles: {}
@@ -10,17 +11,21 @@
     userId: "d8dddc4e-392d-1bf2-3db7-965214369c8f"
   minimap:
     plugins:
+      bookmarks: true
+      bookmarksDecorationsZIndex: 0
+      cursorline: true
+      cursorlineDecorationsZIndex: 0
+      "find-and-replace": true
+      "find-and-replaceDecorationsZIndex": 0
       "highlight-selected": true
       "highlight-selectedDecorationsZIndex": 0
-  "one-dark-ui": {}
   "seeing-is-believing":
     "add-to-env":
       ADD_TO_PATH: "/opt/_ruby22/bin:/home/drodrigues/local/gem_home22/bin"
       GEM_HOME: "/home/drodrigues/local/_gem_home22"
       MANPATH: "/opt/_ruby22/share/man"
-      SOME_KEY: "SOME_VALUE"
     "ruby-command": "/opt/_ruby22/bin/ruby"
-  "spell-check": {}
-  "tree-view": {}
+  "tree-view":
+    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
