@@ -36,3 +36,7 @@ done
 if [ -f ~/.local_data ]; then
   . ~/.local_data
 fi
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
