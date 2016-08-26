@@ -32,3 +32,7 @@ do
   [ -f "$BASHRC" ] || continue
   source "$BASHRC"
 done
+
+if [ -f ~/.local_data ]; then
+  . ~/.local_data
+fi
