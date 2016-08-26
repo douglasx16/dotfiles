@@ -1,4 +1,3 @@
-alias docker='sudo docker'
 alias ccze='ccze -A'
 alias cp='cp -ai'
 alias mv='mv -i'
