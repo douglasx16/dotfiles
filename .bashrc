@@ -44,3 +44,4 @@ export PATH="/home/drodrigues/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
+export HISTTIMEFORMAT="%Y-%h-%d - %H:%M:%S "
