@@ -1,26 +1,39 @@
 [user]
 	name = Douglas Rodrigues
 	email = drodrigues@uoldiveo.com
-[push]
-	default = simple
-[credential]
-	helper = cache --timeout=2592000
+[color]
+	ui = auto
 [http]
-	sslverify = false
+	sslVerify = false
 [core]
-	excludesfile = ~/.gitignore
+	excludesfile = /home/fornellas/.gitignore
 [credential]
 	helper = store
 [alias]
-	aa = add -A
-	pull = pull --rebase
-	co = checkout
-	ci = commit
-	st = status
-	df = diff
-	ds = diff --staged
-	br = branch
-	lg = log --graph --oneline --decorate --all
-	type = cat-file -t
-	dump = cat-file -p
-	up = fetch -p
+	aa      = add -A
+	br      = branch
+	cb      = checkout -b
+	cm      = commit
+	cma     = commit -a
+	co      = checkout
+	cpk     = cherry-pick
+	df      = diff
+	ds      = diff --staged
+	dump    = cat-file -p
+	fuck    = push -f
+	lg      = log --graph --oneline --decorate --all
+	lgc     = log --graph --oneline --decorate
+	lga     = log --graph --abbrev-commit --all --pretty=format:'%C(auto)%h %d %s (%Cgreen%an%Creset, %ar)'
+	lgp     = log --graph --abbrev-commit --all --pretty=format:'%C(auto)%h %d %s (%Cgreen%an%Creset, %ar)%n' --stat -p
+	lgs     = log --graph --abbrev-commit --all --pretty=format:'%C(auto)%h %d %s (%Cgreen%an%Creset, %ar)%n' --stat
+	pr      = pull --rebase
+	st      = status
+	type    = cat-file -t
+	unstage = reset HEAD
+	up      = fetch -p
+[push]
+	default = simple
+[merge]
+    tool = meld
+[rerere]
+	enabled = true
