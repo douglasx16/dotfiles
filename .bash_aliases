@@ -24,3 +24,10 @@ alias chrome='google-chrome'
 alias be="bundle exec"
 alias dotfiles='git --git-dir="$HOME"/src/dotfiles --work-tree="$HOME"'
 alias root='sudo bash --rcfile "$HOME"/.bashrc'
+
+alias d='docker'
+alias g='git'
+alias a='atom -n'
+alias c='google-chrome'
+alias mypublicip="curl 'https://api.ipify.org/' && echo"
+
