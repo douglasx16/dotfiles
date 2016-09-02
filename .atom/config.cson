@@ -1,10 +1,12 @@
 "*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "ab8d2eee-0c05-4ff2-9e73-3f20e02fe635"
   "autocomplete-plus":
     useAlternateScoring: false
   core:
     autoHideMenuBar: true
   editor:
-    fontSize: 15
     invisibles: {}
     softWrap: true
   "exception-reporting":
