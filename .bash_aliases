@@ -29,4 +29,5 @@ alias g='git'
 alias a='atom -n'
 alias c='google-chrome'
 alias mypublicip="curl 'https://api.ipify.org/' && echo"
+alias r='rails'
 
