@@ -45,3 +45,6 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
 export HISTTIMEFORMAT="%Y-%h-%d - %H:%M:%S "
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
