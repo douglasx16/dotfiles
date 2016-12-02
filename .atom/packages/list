@@ -2,7 +2,11 @@ aligner
 aligner-ruby
 atom-alignment
 atom-beautify
+atom-typescript
 autocomplete-plus
+autoprefixer
+color-picker
+csscomb
 cucumber
 file-icons
 git-plus
@@ -15,6 +19,8 @@ keyboard-scroll
 language-docker
 language-haml
 language-puppet
+linter
+linter-jshint
 merge-conflicts
 minimap
 minimap-bookmarks
@@ -28,6 +34,4 @@ ruby-block-converter
 seeing-is-believing
 sort-lines
 todo-show
-autoprefixer
-color-picker
-csscomb
+

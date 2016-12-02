@@ -3,7 +3,7 @@
   'alt-ctrl-k': 'seeing-is-believing:annotate-document'
   'alt-ctrl-i,': 'seeing-is-believing:annotate-magic-comments'
   'alt-ctrl-8': 'seeing-is-believing:remove-annotations'
- 
+
 'body':
   'ctrl-tab ^ctrl': 'unset!'
   'ctrl-tab': 'pane:show-next-item'
@@ -23,3 +23,6 @@
   'ctrl-k m right': 'pane:split-right-and-move-active-item'
   'ctrl-k m up':    'pane:split-up-and-move-active-item'
   'ctrl-k m down':  'pane:split-down-and-move-active-item'
+
+'.editor':
+  'ctrl-shift-q': 'editor:toggle-line-comments'

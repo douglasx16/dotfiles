@@ -1,20 +1,17 @@
-gem 'haml-rails'
-gem 'hamlit'
 gem 'bootstrap-sass'
 gem 'sass-rails'
 gem 'uglifier'
 gem 'coffee-rails'
 gem 'turbolinks'
 gem 'jbuilder'
-gem 'pry-rails'
-gem 'pry-byebug'
 gem 'puma'
 gem 'redcarpet'
 gem 'font-awesome-sass'
+gem 'kaminari'
+gem 'bootstrap-kaminari-views'
 
 gem_group :development do
   gem 'better_errors'
-  gem 'erb2haml'
   gem 'binding_of_caller'
   gem 'byebug', platform: :mri
 end
@@ -45,7 +42,6 @@ environment 'config.sass.preferred_syntax = :sass'
 run 'rm README.md'
 
 after_bundle do
-  run 'rake haml:replace_erbs'
   file 'app/assets/stylesheets/scaffolds.sass', bootstrap
   git :init
   git add: '.'
