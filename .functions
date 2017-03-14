@@ -52,3 +52,7 @@ mp42mp3 () {
   ffmpeg -i "$1".mp4 "$1".mp3
 }
 
+docker_registry_tags() {
+  image=$(echo "$1" | sed 's/-/\//g')
+  curl -u $UOLCORP_USERNAME:$UOLCORP_PASSWORD https://registry.docker.intranet/v2/$image/tags/list
+}
