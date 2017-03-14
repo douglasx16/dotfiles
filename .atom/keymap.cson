@@ -24,5 +24,15 @@
   'ctrl-k m up':    'pane:split-up-and-move-active-item'
   'ctrl-k m down':  'pane:split-down-and-move-active-item'
 
+  # git plus
+  'ctrl-1 c':  'git-plus:add-and-commit'
+  'ctrl-1 a c':  'git-plus:add-all-and-commit'
+  'ctrl-2 c':  'git-plus:checkout'
+  'ctrl-2 b n':  'git-plus:new-branch'
+  'ctrl-2 b d':  'git-plus:delete-local-branch'
+  'ctrl-2 b r d':  'git-plus:delete-remote-branch'
+  'ctrl-2 p':  'git-plus:push'
+  'ctrl-2 m':  'git-plus:merge-no-fast-forward'
+
 '.editor':
   'ctrl-shift-q': 'editor:toggle-line-comments'
