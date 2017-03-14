@@ -8,11 +8,13 @@
     autoHideMenuBar: true
     telemetryConsent: "no"
   editor:
-    fontSize: 12
     invisibles: {}
     softWrap: true
   "exception-reporting":
     userId: "d8dddc4e-392d-1bf2-3db7-965214369c8f"
+  "git-plus":
+    general:
+      _analyticsUserId: "f5dc0981-1f64-42bb-aeb7-0f5f4d9c763b"
   linter:
     errorPanelHeight: 86
   minimap:
