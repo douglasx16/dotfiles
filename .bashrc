@@ -8,6 +8,10 @@ fi
 if [ -f ~/.bash_aliases ]; then
   . ~/.bash_aliases
 fi
+# git auto_complete
+if [ -f ~/.bash_git ]; then
+  . ~/.bash_git
+fi
 
 # Editor
 export EDITOR=vim
