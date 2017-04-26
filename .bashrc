@@ -52,3 +52,7 @@ export HISTTIMEFORMAT="%Y-%h-%d - %H:%M:%S "
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+### Bash history
+export HISTSIZE=-1
+export HISTFILESIZE=-1
