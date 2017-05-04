@@ -34,3 +34,4 @@ alias r='rails'
 alias encode='xargs python -c "import urllib, sys; print urllib.quote(sys.argv[1])"'
 alias decode='xargs python -c "import urllib, sys; print urllib.unquote(sys.argv[1])"'
 
+alias rake='bundle exec rake'
