@@ -1,10 +1,12 @@
 aligner
+aligner-javascript
 aligner-ruby
 atom-alignment
 atom-beautify
 atom-typescript
 autocomplete-plus
 autoprefixer
+busy-signal
 color-picker
 csscomb
 cucumber
@@ -14,13 +16,16 @@ git-status
 git-time-machine
 highlight-selected
 indent-guide-improved
+intentions
 itamae-snippets
 keyboard-scroll
 language-docker
 language-haml
+language-nginx
 language-puppet
 linter
 linter-jshint
+linter-ui-default
 merge-conflicts
 minimap
 minimap-bookmarks
@@ -29,9 +34,11 @@ minimap-find-and-replace
 minimap-highlight-selected
 pigments
 rspec3-snippets
+rspec-snippets
 ruby-block
 ruby-block-converter
 seeing-is-believing
+sinatra-snippets
 sort-lines
 todo-show
 
