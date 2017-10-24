@@ -1,24 +1,10 @@
 "*":
-  "atom-beautify":
-    general:
-      _analyticsUserId: "ab8d2eee-0c05-4ff2-9e73-3f20e02fe635"
-  "autocomplete-plus":
-    useAlternateScoring: false
   core:
-    autoHideMenuBar: true
     telemetryConsent: "no"
-  editor:
-    invisibles: {}
-    softWrap: true
+  editor: {}
   "exception-reporting":
-    userId: "d8dddc4e-392d-1bf2-3db7-965214369c8f"
-  "git-plus":
-    general:
-      _analyticsUserId: "f5dc0981-1f64-42bb-aeb7-0f5f4d9c763b"
-  linter:
-    errorPanelHeight: 86
-  "linter-ui-default":
-    showPanel: true
+    userId: "f736d0ab-316a-4299-bc09-e3b54c2854fa"
+  "linter-ui-default": {}
   minimap:
     plugins:
       bookmarks: true
@@ -29,6 +15,5 @@
       "find-and-replaceDecorationsZIndex": 0
       "highlight-selected": true
       "highlight-selectedDecorationsZIndex": 0
-  "tree-view": {}
   welcome:
     showOnStartup: false
