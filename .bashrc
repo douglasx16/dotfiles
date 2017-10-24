@@ -41,7 +41,7 @@ if [ -f ~/.local_data ]; then
   . ~/.local_data
 fi
 
-export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/.rbenv/versions/2.3.1/bin:$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 export PATH="$HOME/.pyenv/bin:$PATH"
@@ -56,3 +56,4 @@ export PATH="/usr/local/heroku/bin:$PATH"
 ### Bash history
 export HISTSIZE=-1
 export HISTFILESIZE=-1
+export JAVA_HOME=/opt/jdk1.8.0_151/
