@@ -28,7 +28,7 @@ alias d='docker'
 alias g='git'
 alias a='atom -n'
 alias c='google-chrome'
-alias mypublicip="curl 'https://api.ipify.org/' && echo"
+alias myip="curl 'https://api.ipify.org/' && echo"
 alias r='rails'
 
 alias encode='xargs python -c "import urllib, sys; print urllib.quote(sys.argv[1])"'

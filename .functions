@@ -18,7 +18,7 @@ function ruby23() {
   export MANPATH="/opt/ruby${RUBY_MAJOR}${RUBY_MID}/share/man:$MANPATH"
 }
 
-function mkbkp () { 
+function mkbkp () {
     cp -ai "$1" "$1".$(date +%Y%m%d%H%M%S)
 }
 
@@ -41,18 +41,18 @@ function sssh() {
     echo "Adding $1 to .ssh/config"
     echo "host $1 # included from sssh" >> .ssh/config
   fi
-  
+
   echo "Starting connection"
   ssh $1
 }
 webm2mp4 () {
   ffmpeg -i "$1".webm -qscale 0 "$1".mp4
-}    
+}
 mp42mp3 () {
   ffmpeg -i "$1".mp4 "$1".mp3
 }
 
-docker_registry_tags() {
+docker_tags() {
   image=$(echo "$1" | sed 's/-/\//g')
   curl -u $UOLCORP_USERNAME:$UOLCORP_PASSWORD https://registry.docker.intranet/v2/$image/tags/list
 }
