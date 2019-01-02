@@ -35,7 +35,7 @@ else
   GIT_PS1_SHOWUPSTREAM="auto"
   GIT_PS1_SHOWCOLORHINTS=true
 
-  PS1='`if [ $? = 0 ]; then echo "\[\033[01;32m\]✔"; else echo "\[\033[01;31m\]✘"; fi` \[\033[01;30m\]\t\[\033[01;34m\] \w\[\033[35m\]$(__git_ps1) \[\033[01;34m\]$\[\033[00m\] '
+  PS1='`if [ $? = 0 ]; then echo "\[\033[01;32m\]✔"; else echo "\[\033[01;31m\]✘"; fi` \[\033[01;36m\]\t\[\033[01;34m\] \w\[\033[35m\]$(__git_ps1) \[\033[01;34m\]$\[\033[00m\] '
   unset color_prompt force_color_prompt
 fi
 
@@ -50,11 +50,8 @@ if [ -f ~/.local_data ]; then
 fi
 
 export PATH="$HOME/.rbenv/versions/2.3.1/bin:$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
 
 export PATH="$HOME/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
 
 export HISTTIMEFORMAT="%Y-%h-%d - %H:%M:%S "
 
@@ -65,3 +62,9 @@ export PATH="/usr/local/heroku/bin:$PATH"
 export HISTSIZE=-1
 export HISTFILESIZE=-1
 export JAVA_HOME=/opt/jdk1.8.0_151/
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+source <(kubectl completion bash)
