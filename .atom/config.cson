@@ -1,7 +1,17 @@
 "*":
   core:
+    disabledPackages: [
+      "linter-ui-default"
+      "linter-jshint"
+      "csscomb"
+      "atom-typescript"
+      "aligner-javascript"
+      "linter"
+    ]
     telemetryConsent: "no"
-  editor: {}
+  editor:
+    fontSize: 13
+    showInvisibles: true
   "exception-reporting":
     userId: "f736d0ab-316a-4299-bc09-e3b54c2854fa"
   "linter-ui-default": {}
@@ -15,5 +25,6 @@
       "find-and-replaceDecorationsZIndex": 0
       "highlight-selected": true
       "highlight-selectedDecorationsZIndex": 0
+  "one-dark-ui": {}
   welcome:
     showOnStartup: false

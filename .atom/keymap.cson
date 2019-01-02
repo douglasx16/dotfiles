@@ -36,3 +36,6 @@
 
 '.editor':
   'ctrl-shift-q': 'editor:toggle-line-comments'
+
+'atom-workspace atom-text-editor:not([mini])':
+  'alt-right-/': 'editor:toggle-line-comments'

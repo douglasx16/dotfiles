@@ -33,8 +33,6 @@ minimap-cursorline
 minimap-find-and-replace
 minimap-highlight-selected
 pigments
-rspec3-snippets
-rspec-snippets
 ruby-block
 ruby-block-converter
 seeing-is-believing
