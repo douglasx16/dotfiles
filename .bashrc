@@ -35,7 +35,7 @@ else
   GIT_PS1_SHOWUPSTREAM="auto"
   GIT_PS1_SHOWCOLORHINTS=true
 
-  PS1='`if [ $? = 0 ]; then echo "\[\033[01;32m\]✔"; else echo "\[\033[01;31m\]✘"; fi` \[\033[01;36m\]\t\[\033[01;34m\] \w\[\033[35m\]$(__git_ps1) \[\033[01;34m\]$\[\033[00m\] '
+  PS1='`if [ $? = 0 ]; then echo "\[\033[01;32m\]✔"; else echo "\[\033[01;31m\]✘"; fi` \[\033[01;36m\]\t\[\033[01;34m\] \w\[\033[35m\]$(__git_ps1) \[\033[01;34m\]$ \n—> \[\033[00m\]'
   unset color_prompt force_color_prompt
 fi
 
@@ -61,10 +61,12 @@ export PATH="/usr/local/heroku/bin:$PATH"
 ### Bash history
 export HISTSIZE=-1
 export HISTFILESIZE=-1
-export JAVA_HOME=/opt/jdk1.8.0_151/
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi
-source <(kubectl completion bash)
+#export JAVA_HOME=/opt/jdk1.8.0_151/
+#export PYENV_ROOT="$HOME/.pyenv"
+#export PATH="$PYENV_ROOT/bin:$PATH"
+#if command -v pyenv 1>/dev/null 2>&1; then
+#  eval "$(pyenv init -)"
+#fi
+#source <(kubectl completion bash)
+
+. $HOME/.asdf/asdf.sh
