@@ -70,3 +70,4 @@ export HISTFILESIZE=-1
 #source <(kubectl completion bash)
 
 . $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
